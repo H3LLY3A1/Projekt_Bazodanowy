@@ -1,3 +1,28 @@
 .env
+.env.*
+
+# Python
 venv/
+.venv/
 __pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Logs and local exports
+*.log
+*.tmp
+*.bak
+counts.json

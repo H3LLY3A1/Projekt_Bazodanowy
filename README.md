@@ -1,31 +1,39 @@
-# Projekt Bazy Danych
+# Projektowanie Baz Danych
 
-Repozytorium zawiera projekt **baz danych** realizowany zarówno w technologii **relacyjnej**, jak i **nierelacyjnej (NoSQL)**. Projekt jest realizowany zespołowo przez cztery osoby: **Anna Kępowicz, Błażej Kowal, Dawid Błaszczyk, Kacper Mocek**.  
+Repozytorium zawiera kompletny projekt bazodanowy realizowany etapowo:
 
-## Zawartość repozytorium
+- modelowanie konceptualne (ERD, wymagania, zakres),
+- projekt logiczny i normalizację,
+- implementację relacyjnej bazy danych (DDL, zapytania, analiza wydajności),
+- implementację wariantu NoSQL (MongoDB, walidacje, generatory danych, zapytania),
+- podsumowanie i analizę końcową.
 
-### 1. Faza konceptualna
-- Streszczenie wymagań projektu i zakres działań.
-- Specyfikacja funkcjonalna z mechanizmem logowania użytkowników i różnymi poziomami dostępu (min. 4 role: admin, user, editor, itp.).
-- Diagram obiektowo-związkowy (ER) z ok. 20 encjami, relacjami 1-N i N-N.
+## Struktura projektu
 
-### 2. Faza logiczna
-- Definicja schematów relacji na podstawie diagramu ER.
-- Normalizacja do III postaci normalnej.
-- Diagram relacji przygotowany w narzędziu do projektowania baz danych.
+- `lesson-1` - wymagania, zakres i diagramy ERD,
+- `lesson-2` - relacje i III postać normalna,
+- `lesson-3` - skrypty DDL SQL,
+- `lesson-4` - algorytmy/generatory danych,
+- `lesson-5` - zapytania i raporty SQL,
+- `lesson-6` - analiza `EXPLAIN` i optymalizacja,
+- `lesson-7` - dokumentacja i analiza etapu,
+- `lesson-8` - modyfikacje modelu i ograniczeń,
+- `lesson-9` - modyfikacje SQL DDL,
+- `lesson-10` - decyzje projektowe NoSQL,
+- `lesson-11` - schematy i walidacje MongoDB,
+- `lesson-12` - generatory danych i konfiguracja,
+- `lesson-13` - indeksy, zapytania i analiza końcowa.
 
-### 3. Faza fizyczna
-- Skrypty SQL DDL do tworzenia bazy relacyjnej, z więzami integralności i ograniczeniami (CHECK, kaskady).
-- Skrypt w Pythonie (lub innym języku) generujący losowe dane dla bazy relacyjnej, obsługujący powiązania między encjami.
-- Raporty i funkcje wyszukiwania – minimum 20 zapytań SQL o różnym charakterze, w tym statystycznym.
-- Analiza zapytań przy użyciu funkcji `EXPLAIN` i wprowadzenie indeksów.
-- Sprawozdanie powykonawcze z wnioskami dotyczącymi realizacji projektu i kierunków rozwoju bazy.
-- Aktualizacje bazy i raportów w przypadku zmiany wymagań.
+## Technologie
 
-### 4. Projekt bazy nierelacyjnej (NoSQL)
-- Wybór technologii NoSQL oraz uzasadnienie decyzji (zalety i wady).
-- Implementacja struktur przechowywania danych, mechanizmów spójności i zapytań.
-- Skrypt generujący losowe dane dla bazy NoSQL.
-- Raporty i funkcje wyszukiwania – minimum 20 zapytań, w tym statystycznych.
-- Analiza porównawcza z bazą relacyjną – różnice w wydajności, sposobie definiowania zapytań i realizacji wymagań.
+- SQL (DDL, zapytania, optymalizacja),
+- MongoDB,
+- Python (generatory danych i skrypty uruchomieniowe).
+
+## Autorzy
+
+- Anna Kępowicz
+- Błażej Kowal
+- Dawid Błaszczyk
+- Kacper Mocek
 
